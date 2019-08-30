@@ -1,0 +1,569 @@
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.68
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Feb 8 2016 20:25:54 UTC
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.68.0
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 10
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.0
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\ideaPo\apache-solr
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\ideaPo\apache-solr
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\ideaPo\apache-solr\conf\logging.properties
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\ideaPo\apache-solr\endorsed
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\ideaPo\apache-solr
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\ideaPo\apache-solr
+七月 29, 2019 9:14:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\ideaPo\apache-solr\temp
+七月 29, 2019 9:14:02 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+七月 29, 2019 9:14:02 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+七月 29, 2019 9:14:02 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.1m 19 Mar 2015)
+七月 29, 2019 9:14:03 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8081"]
+七月 29, 2019 9:14:03 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:14:03 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1291 ms
+七月 29, 2019 9:14:03 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+七月 29, 2019 9:14:03 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.68
+七月 29, 2019 9:14:03 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\ideaPo\apache-solr\webapps\solr.war
+七月 29, 2019 9:14:06 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+七月 29, 2019 9:14:06 上午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [172] milliseconds.
+七月 29, 2019 9:14:06 上午 org.apache.catalina.core.StandardContext startInternal
+严重: One or more Filters failed to start. Full details will be found in the appropriate container log file
+七月 29, 2019 9:14:06 上午 org.apache.catalina.core.StandardContext startInternal
+严重: Context [/solr] startup failed due to previous errors
+七月 29, 2019 9:14:06 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\ideaPo\apache-solr\webapps\solr.war has finished in 3,419 ms
+七月 29, 2019 9:14:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\docs
+七月 29, 2019 9:14:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\docs has finished in 101 ms
+七月 29, 2019 9:14:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\examples
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\examples has finished in 644 ms
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\host-manager
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\host-manager has finished in 55 ms
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA has finished in 261 ms
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\manager
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\manager has finished in 45 ms
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ROOT
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ROOT has finished in 43 ms
+七月 29, 2019 9:14:07 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8081"]
+七月 29, 2019 9:14:07 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:14:07 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4663 ms
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.68
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Feb 8 2016 20:25:54 UTC
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.68.0
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 10
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.0
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\ideaPo\apache-solr
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\ideaPo\apache-solr
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\ideaPo\apache-solr\conf\logging.properties
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\ideaPo\apache-solr\endorsed
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\ideaPo\apache-solr
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\ideaPo\apache-solr
+七月 29, 2019 9:19:27 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\ideaPo\apache-solr\temp
+七月 29, 2019 9:19:27 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+七月 29, 2019 9:19:27 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+七月 29, 2019 9:19:28 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.1m 19 Mar 2015)
+七月 29, 2019 9:19:28 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-8081"]
+七月 29, 2019 9:19:28 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:19:28 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1026 ms
+七月 29, 2019 9:19:28 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+七月 29, 2019 9:19:28 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.68
+七月 29, 2019 9:19:28 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\ideaPo\apache-solr\webapps\solr.war
+七月 29, 2019 9:19:30 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+七月 29, 2019 9:19:30 上午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [150] milliseconds.
+七月 29, 2019 9:19:32 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\ideaPo\apache-solr\webapps\solr.war has finished in 4,273 ms
+七月 29, 2019 9:19:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\docs
+七月 29, 2019 9:19:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\docs has finished in 112 ms
+七月 29, 2019 9:19:32 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\examples
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\examples has finished in 339 ms
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\host-manager
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\host-manager has finished in 61 ms
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA has finished in 145 ms
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\manager
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\manager has finished in 42 ms
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ROOT
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ROOT has finished in 28 ms
+七月 29, 2019 9:19:33 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-8081"]
+七月 29, 2019 9:19:33 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:19:33 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 5076 ms
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.68
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Feb 8 2016 20:25:54 UTC
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.68.0
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 10
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.0
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\ideaPo\apache-solr
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\ideaPo\apache-solr
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\ideaPo\apache-solr\conf\logging.properties
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\ideaPo\apache-solr\endorsed
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\ideaPo\apache-solr
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\ideaPo\apache-solr
+七月 29, 2019 9:20:42 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\ideaPo\apache-solr\temp
+七月 29, 2019 9:20:42 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+七月 29, 2019 9:20:42 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+七月 29, 2019 9:20:42 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.1m 19 Mar 2015)
+七月 29, 2019 9:20:43 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-1900"]
+七月 29, 2019 9:20:43 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:20:43 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1030 ms
+七月 29, 2019 9:20:43 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+七月 29, 2019 9:20:43 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.68
+七月 29, 2019 9:20:43 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\ideaPo\apache-solr\webapps\solr.war
+七月 29, 2019 9:20:44 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+七月 29, 2019 9:20:45 上午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [145] milliseconds.
+七月 29, 2019 9:20:46 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\ideaPo\apache-solr\webapps\solr.war has finished in 3,730 ms
+七月 29, 2019 9:20:46 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\docs
+七月 29, 2019 9:20:46 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\docs has finished in 42 ms
+七月 29, 2019 9:20:46 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\examples
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\examples has finished in 184 ms
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\host-manager
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\host-manager has finished in 41 ms
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA has finished in 80 ms
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\manager
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\manager has finished in 30 ms
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ROOT
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ROOT has finished in 33 ms
+七月 29, 2019 9:20:47 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-1900"]
+七月 29, 2019 9:20:47 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:20:47 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4213 ms
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.68
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Feb 8 2016 20:25:54 UTC
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.68.0
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 10
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.0
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\ideaPo\apache-solr
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\ideaPo\apache-solr
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\ideaPo\apache-solr\conf\logging.properties
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\ideaPo\apache-solr\endorsed
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\ideaPo\apache-solr
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\ideaPo\apache-solr
+七月 29, 2019 9:26:52 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\ideaPo\apache-solr\temp
+七月 29, 2019 9:26:52 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+七月 29, 2019 9:26:52 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+七月 29, 2019 9:26:53 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.1m 19 Mar 2015)
+七月 29, 2019 9:26:53 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-19000"]
+七月 29, 2019 9:26:53 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:26:53 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1043 ms
+七月 29, 2019 9:26:53 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+七月 29, 2019 9:26:53 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.68
+七月 29, 2019 9:26:53 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\ideaPo\apache-solr\webapps\solr.war
+七月 29, 2019 9:26:54 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+七月 29, 2019 9:26:55 上午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [136] milliseconds.
+七月 29, 2019 9:26:56 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\ideaPo\apache-solr\webapps\solr.war has finished in 3,460 ms
+七月 29, 2019 9:26:56 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\docs
+七月 29, 2019 9:26:56 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\docs has finished in 34 ms
+七月 29, 2019 9:26:56 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\examples
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\examples has finished in 163 ms
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\host-manager
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\host-manager has finished in 33 ms
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA has finished in 86 ms
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\manager
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\manager has finished in 33 ms
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ROOT
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ROOT has finished in 24 ms
+七月 29, 2019 9:26:57 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-apr-19000"]
+七月 29, 2019 9:26:57 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 9:26:57 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 3893 ms
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.68
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Feb 8 2016 20:25:54 UTC
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.68.0
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 10
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.0
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_181-b13
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         D:\ideaPo\apache-solr
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         D:\ideaPo\apache-solr
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=D:\ideaPo\apache-solr\conf\logging.properties
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=D:\ideaPo\apache-solr\endorsed
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=D:\ideaPo\apache-solr
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=D:\ideaPo\apache-solr
+七月 29, 2019 10:14:58 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=D:\ideaPo\apache-solr\temp
+七月 29, 2019 10:14:58 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+七月 29, 2019 10:14:58 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+七月 29, 2019 10:14:59 上午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized (OpenSSL 1.0.1m 19 Mar 2015)
+七月 29, 2019 10:14:59 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-apr-19000"]
+七月 29, 2019 10:14:59 上午 org.apache.coyote.AbstractProtocol init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-apr-19000"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:470)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:650)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:820)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:642)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:667)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+
+七月 29, 2019 10:14:59 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-19000]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-19000]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:820)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:642)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:667)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:470)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:650)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+
+七月 29, 2019 10:14:59 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 10:14:59 上午 org.apache.coyote.AbstractProtocol init
+严重: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:470)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:650)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:820)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:642)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:667)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+
+七月 29, 2019 10:14:59 上午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:820)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:642)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:667)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] ?????????×???(Э?é/???????/???)????í??
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:470)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:650)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+
+七月 29, 2019 10:14:59 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1302 ms
+七月 29, 2019 10:14:59 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+七月 29, 2019 10:14:59 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.68
+七月 29, 2019 10:14:59 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive D:\ideaPo\apache-solr\webapps\solr.war
+七月 29, 2019 10:15:02 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+七月 29, 2019 10:15:02 上午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [157] milliseconds.
+七月 29, 2019 10:15:05 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive D:\ideaPo\apache-solr\webapps\solr.war has finished in 6,213 ms
+七月 29, 2019 10:15:05 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\docs
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\docs has finished in 48 ms
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\examples
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\examples has finished in 364 ms
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\host-manager
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\host-manager has finished in 59 ms
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ListenerRSA has finished in 103 ms
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\manager
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\manager has finished in 38 ms
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory D:\ideaPo\apache-solr\webapps\ROOT
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory D:\ideaPo\apache-solr\webapps\ROOT has finished in 33 ms
+七月 29, 2019 10:15:06 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 6915 ms
+七月 29, 2019 10:15:06 上午 org.apache.catalina.core.StandardServer await
+严重: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:426)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:781)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:727)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+
+七月 29, 2019 10:15:06 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-apr-19000"]
+七月 29, 2019 10:15:06 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 10:15:06 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+七月 29, 2019 10:15:06 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-apr-19000"]
+七月 29, 2019 10:15:06 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-apr-19000"]
+七月 29, 2019 10:15:06 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-apr-8009"]
+七月 29, 2019 10:15:06 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-apr-8009"]

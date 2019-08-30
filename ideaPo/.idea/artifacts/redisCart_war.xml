@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="redisCart:war">
+    <output-path>$PROJECT_DIR$/redisCart/target</output-path>
+    <root id="archive" name="redisCart-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="redisCart:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.oracle.application.mapper.LogMapper" >
+  <resultMap id="BaseResultMap" type="com.oracle.application.pojo.Log" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="executemethodname" property="executemethodname" jdbcType="VARCHAR" />
+    <result column="executetime" property="executetime" jdbcType="VARCHAR" />
+    <result column="executorname" property="executorname" jdbcType="VARCHAR" />
+    <result column="requestip" property="requestip" jdbcType="VARCHAR" />
+    <result column="requestime" property="requestime" jdbcType="VARCHAR" />
+    <result column="requestdesc" property="requestdesc" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.oracle.application.pojo.Log" extends="BaseResultMap" >
+    <result column="executeargs" property="executeargs" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, executemethodname, executetime, executorname, requestip, requestime, requestdesc
+  </sql>
+  <sql id="Blob_Column_List" >
+    executeargs
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.oracle.application.pojo.LogExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.oracle.application.pojo.LogExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.oracle.application.pojo.LogExample" >
+    delete from log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.oracle.application.pojo.Log" >
+    insert into log (id, executemethodname, executetime, 
+      executorname, requestip, requestime, 
+      requestdesc, executeargs)
+    values (#{id,jdbcType=INTEGER}, #{executemethodname,jdbcType=VARCHAR}, #{executetime,jdbcType=VARCHAR}, 
+      #{executorname,jdbcType=VARCHAR}, #{requestip,jdbcType=VARCHAR}, #{requestime,jdbcType=VARCHAR}, 
+      #{requestdesc,jdbcType=VARCHAR}, #{executeargs,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oracle.application.pojo.Log" >
+    insert into log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="executemethodname != null" >
+        executemethodname,
+      </if>
+      <if test="executetime != null" >
+        executetime,
+      </if>
+      <if test="executorname != null" >
+        executorname,
+      </if>
+      <if test="requestip != null" >
+        requestip,
+      </if>
+      <if test="requestime != null" >
+        requestime,
+      </if>
+      <if test="requestdesc != null" >
+        requestdesc,
+      </if>
+      <if test="executeargs != null" >
+        executeargs,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="executemethodname != null" >
+        #{executemethodname,jdbcType=VARCHAR},
+      </if>
+      <if test="executetime != null" >
+        #{executetime,jdbcType=VARCHAR},
+      </if>
+      <if test="executorname != null" >
+        #{executorname,jdbcType=VARCHAR},
+      </if>
+      <if test="requestip != null" >
+        #{requestip,jdbcType=VARCHAR},
+      </if>
+      <if test="requestime != null" >
+        #{requestime,jdbcType=VARCHAR},
+      </if>
+      <if test="requestdesc != null" >
+        #{requestdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="executeargs != null" >
+        #{executeargs,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.oracle.application.pojo.LogExample" resultType="java.lang.Integer" >
+    select count(*) from log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update log
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.executemethodname != null" >
+        executemethodname = #{record.executemethodname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.executetime != null" >
+        executetime = #{record.executetime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.executorname != null" >
+        executorname = #{record.executorname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.requestip != null" >
+        requestip = #{record.requestip,jdbcType=VARCHAR},
+      </if>
+      <if test="record.requestime != null" >
+        requestime = #{record.requestime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.requestdesc != null" >
+        requestdesc = #{record.requestdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.executeargs != null" >
+        executeargs = #{record.executeargs,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update log
+    set id = #{record.id,jdbcType=INTEGER},
+      executemethodname = #{record.executemethodname,jdbcType=VARCHAR},
+      executetime = #{record.executetime,jdbcType=VARCHAR},
+      executorname = #{record.executorname,jdbcType=VARCHAR},
+      requestip = #{record.requestip,jdbcType=VARCHAR},
+      requestime = #{record.requestime,jdbcType=VARCHAR},
+      requestdesc = #{record.requestdesc,jdbcType=VARCHAR},
+      executeargs = #{record.executeargs,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update log
+    set id = #{record.id,jdbcType=INTEGER},
+      executemethodname = #{record.executemethodname,jdbcType=VARCHAR},
+      executetime = #{record.executetime,jdbcType=VARCHAR},
+      executorname = #{record.executorname,jdbcType=VARCHAR},
+      requestip = #{record.requestip,jdbcType=VARCHAR},
+      requestime = #{record.requestime,jdbcType=VARCHAR},
+      requestdesc = #{record.requestdesc,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oracle.application.pojo.Log" >
+    update log
+    <set >
+      <if test="executemethodname != null" >
+        executemethodname = #{executemethodname,jdbcType=VARCHAR},
+      </if>
+      <if test="executetime != null" >
+        executetime = #{executetime,jdbcType=VARCHAR},
+      </if>
+      <if test="executorname != null" >
+        executorname = #{executorname,jdbcType=VARCHAR},
+      </if>
+      <if test="requestip != null" >
+        requestip = #{requestip,jdbcType=VARCHAR},
+      </if>
+      <if test="requestime != null" >
+        requestime = #{requestime,jdbcType=VARCHAR},
+      </if>
+      <if test="requestdesc != null" >
+        requestdesc = #{requestdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="executeargs != null" >
+        executeargs = #{executeargs,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.oracle.application.pojo.Log" >
+    update log
+    set executemethodname = #{executemethodname,jdbcType=VARCHAR},
+      executetime = #{executetime,jdbcType=VARCHAR},
+      executorname = #{executorname,jdbcType=VARCHAR},
+      requestip = #{requestip,jdbcType=VARCHAR},
+      requestime = #{requestime,jdbcType=VARCHAR},
+      requestdesc = #{requestdesc,jdbcType=VARCHAR},
+      executeargs = #{executeargs,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oracle.application.pojo.Log" >
+    update log
+    set executemethodname = #{executemethodname,jdbcType=VARCHAR},
+      executetime = #{executetime,jdbcType=VARCHAR},
+      executorname = #{executorname,jdbcType=VARCHAR},
+      requestip = #{requestip,jdbcType=VARCHAR},
+      requestime = #{requestime,jdbcType=VARCHAR},
+      requestdesc = #{requestdesc,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

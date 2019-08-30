@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .bodystyle{
+            filter:alpha(opacity=100);
+            -moz-opacity:1;
+            -khtml-opacity: 1;
+            opacity: 1;
+            width:100%;
+            position:absolute;
+
+            background-attachment:fixed;
+        }
+        table{
+
+            width:30em;
+
+            table-layout:fixed;
+
+        }
+
+        td{
+
+            width:100%;
+
+            word-break:keep-all;
+
+            white-space:nowrap;
+
+            overflow:hidden;
+
+            text-overflow:ellipsis;
+
+        }
+        </style>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <!--<script th:replace="head::static"></script>-->
+</head>
+<body>
+<div class="with:80%"  >
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>标题</th>
+            <th>作者</th>
+            <th>新闻内容</th>
+            <th>时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="news:${newsList}">
+            <td th:text="${news.title}"></td>
+            <td th:text="${news.author}"></td>
+            <td th:text="${news.context}"></td>
+            <td th:text="${#dates.format(news.publishTime,'yyyy-MM-dd')}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

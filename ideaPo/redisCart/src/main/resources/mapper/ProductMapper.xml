@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.oracle.mapper.ProductMapper" >
+  <resultMap id="BaseResultMap" type="com.oracle.pojo.Product" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="pro_name" property="proName" jdbcType="VARCHAR" />
+    <result column="pro_sn" property="proSn" jdbcType="VARCHAR" />
+    <result column="pro_price" property="proPrice" jdbcType="DOUBLE" />
+    <result column="pro_num" property="proNum" jdbcType="INTEGER" />
+    <result column="pro_img" property="proImg" jdbcType="VARCHAR" />
+    <result column="pro_fullname" property="proFullname" jdbcType="VARCHAR" />
+    <result column="unit" property="unit" jdbcType="VARCHAR" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.oracle.pojo.Product" extends="BaseResultMap" >
+    <result column="desc" property="desc" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, pro_name, pro_sn, pro_price, pro_num, pro_img, pro_fullname, unit, create_date, 
+    status
+  </sql>
+  <sql id="Blob_Column_List" >
+    `desc`
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.oracle.pojo.ProductExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from product
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.oracle.pojo.ProductExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from product
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from product
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from product
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.oracle.pojo.ProductExample" >
+    delete from product
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.oracle.pojo.Product" >
+    insert into product (id, pro_name, pro_sn, 
+      pro_price, pro_num, pro_img, 
+      pro_fullname, unit, create_date, 
+      status, desc)
+    values (#{id,jdbcType=INTEGER}, #{proName,jdbcType=VARCHAR}, #{proSn,jdbcType=VARCHAR}, 
+      #{proPrice,jdbcType=DOUBLE}, #{proNum,jdbcType=INTEGER}, #{proImg,jdbcType=VARCHAR}, 
+      #{proFullname,jdbcType=VARCHAR}, #{unit,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{status,jdbcType=INTEGER}, #{desc,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oracle.pojo.Product" >
+    insert into product
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="proName != null" >
+        pro_name,
+      </if>
+      <if test="proSn != null" >
+        pro_sn,
+      </if>
+      <if test="proPrice != null" >
+        pro_price,
+      </if>
+      <if test="proNum != null" >
+        pro_num,
+      </if>
+      <if test="proImg != null" >
+        pro_img,
+      </if>
+      <if test="proFullname != null" >
+        pro_fullname,
+      </if>
+      <if test="unit != null" >
+        unit,
+      </if>
+      <if test="createDate != null" >
+        create_date,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="desc != null" >
+        desc,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="proName != null" >
+        #{proName,jdbcType=VARCHAR},
+      </if>
+      <if test="proSn != null" >
+        #{proSn,jdbcType=VARCHAR},
+      </if>
+      <if test="proPrice != null" >
+        #{proPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="proNum != null" >
+        #{proNum,jdbcType=INTEGER},
+      </if>
+      <if test="proImg != null" >
+        #{proImg,jdbcType=VARCHAR},
+      </if>
+      <if test="proFullname != null" >
+        #{proFullname,jdbcType=VARCHAR},
+      </if>
+      <if test="unit != null" >
+        #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="desc != null" >
+        #{desc,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.oracle.pojo.ProductExample" resultType="java.lang.Integer" >
+    select count(*) from product
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update product
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.proName != null" >
+        pro_name = #{record.proName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proSn != null" >
+        pro_sn = #{record.proSn,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proPrice != null" >
+        pro_price = #{record.proPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="record.proNum != null" >
+        pro_num = #{record.proNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.proImg != null" >
+        pro_img = #{record.proImg,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proFullname != null" >
+        pro_fullname = #{record.proFullname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.unit != null" >
+        unit = #{record.unit,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createDate != null" >
+        create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null" >
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.desc != null" >
+        desc = #{record.desc,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update product
+    set id = #{record.id,jdbcType=INTEGER},
+      pro_name = #{record.proName,jdbcType=VARCHAR},
+      pro_sn = #{record.proSn,jdbcType=VARCHAR},
+      pro_price = #{record.proPrice,jdbcType=DOUBLE},
+      pro_num = #{record.proNum,jdbcType=INTEGER},
+      pro_img = #{record.proImg,jdbcType=VARCHAR},
+      pro_fullname = #{record.proFullname,jdbcType=VARCHAR},
+      unit = #{record.unit,jdbcType=VARCHAR},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      status = #{record.status,jdbcType=INTEGER},
+      desc = #{record.desc,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update product
+    set id = #{record.id,jdbcType=INTEGER},
+      pro_name = #{record.proName,jdbcType=VARCHAR},
+      pro_sn = #{record.proSn,jdbcType=VARCHAR},
+      pro_price = #{record.proPrice,jdbcType=DOUBLE},
+      pro_num = #{record.proNum,jdbcType=INTEGER},
+      pro_img = #{record.proImg,jdbcType=VARCHAR},
+      pro_fullname = #{record.proFullname,jdbcType=VARCHAR},
+      unit = #{record.unit,jdbcType=VARCHAR},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      status = #{record.status,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oracle.pojo.Product" >
+    update product
+    <set >
+      <if test="proName != null" >
+        pro_name = #{proName,jdbcType=VARCHAR},
+      </if>
+      <if test="proSn != null" >
+        pro_sn = #{proSn,jdbcType=VARCHAR},
+      </if>
+      <if test="proPrice != null" >
+        pro_price = #{proPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="proNum != null" >
+        pro_num = #{proNum,jdbcType=INTEGER},
+      </if>
+      <if test="proImg != null" >
+        pro_img = #{proImg,jdbcType=VARCHAR},
+      </if>
+      <if test="proFullname != null" >
+        pro_fullname = #{proFullname,jdbcType=VARCHAR},
+      </if>
+      <if test="unit != null" >
+        unit = #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="desc != null" >
+        desc = #{desc,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.oracle.pojo.Product" >
+    update product
+    set pro_name = #{proName,jdbcType=VARCHAR},
+      pro_sn = #{proSn,jdbcType=VARCHAR},
+      pro_price = #{proPrice,jdbcType=DOUBLE},
+      pro_num = #{proNum,jdbcType=INTEGER},
+      pro_img = #{proImg,jdbcType=VARCHAR},
+      pro_fullname = #{proFullname,jdbcType=VARCHAR},
+      unit = #{unit,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=INTEGER},
+      desc = #{desc,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oracle.pojo.Product" >
+    update product
+    set pro_name = #{proName,jdbcType=VARCHAR},
+      pro_sn = #{proSn,jdbcType=VARCHAR},
+      pro_price = #{proPrice,jdbcType=DOUBLE},
+      pro_num = #{proNum,jdbcType=INTEGER},
+      pro_img = #{proImg,jdbcType=VARCHAR},
+      pro_fullname = #{proFullname,jdbcType=VARCHAR},
+      unit = #{unit,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

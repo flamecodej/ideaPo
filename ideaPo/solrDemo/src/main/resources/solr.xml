@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:solr="http://www.springframework.org/schema/data/solr"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/data/solr http://www.springframework.org/schema/data/solr/spring-solr.xsd">
+
+    <!--用于连接Solr服务器-->
+    <solr:solr-server url="http://192.168.25.129:19000/solr" id="solrServer" ></solr:solr-server>
+    <!--SolrApi 用于执行 操作Solr 的模板-->
+    <bean id="solrTemplate" class="org.springframework.data.solr.core.SolrTemplate">
+            <constructor-arg ref="solrServer"></constructor-arg>
+    </bean>
+</beans>

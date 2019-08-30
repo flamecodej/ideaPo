@@ -1,0 +1,25 @@
+server:
+  servlet:
+    context-path: /boots
+  port: 8082
+spring:
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/per?useUnicode=true&characterEncoding=utf-8
+  thymeleaf:
+    suffix: .html
+    mode: HTML5
+    prefix: classpath:/templetes/views/
+
+mybatis:
+  mapper-locations: mapper/*Mapper.xml
+
+  # localhost:8080/config 监控的选项有很多bean
+management:
+  endpoints:
+    web:
+      base-path: /config
+      exposure:
+        include: "*"
